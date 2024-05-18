@@ -14,7 +14,9 @@ stages:
       - job: INTG
         timeoutInMinutes: 5
         continueOnError: true
+        cancelTimeoutInMinutes: 2
         
+
       
 
 
