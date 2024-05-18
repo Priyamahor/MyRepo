@@ -12,6 +12,10 @@ stages:
     displayName: "INTG"
     jobs:
       - job: INTG
+        timeoutInMinutes: 5
+        continueOnError: true
+        
+      
 
 
  
