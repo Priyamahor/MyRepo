@@ -5,7 +5,13 @@ pool:
 
 stages:
   - stage: A
+    displayName: "DEV"
     jobs:
-      - job: MyNewJob
-        steps:
-          - script: echo "A"
+      - job: DEV
+  - stage: B
+    displayName: "INTG"
+    jobs:
+      - job: INTG
+
+
+ 
