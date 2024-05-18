@@ -6,6 +6,6 @@ pool:
 stages:
   - stage: A
     jobs:
-      - job: A
+      - job: MyNewJob
         steps:
           - script: echo "A"
