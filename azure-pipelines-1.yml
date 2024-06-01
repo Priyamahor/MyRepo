@@ -5,17 +5,18 @@ pool:
 
 stages:
   - stage: A
-    displayName: "DEV"
     jobs:
-      - job: DEV
-  - stage: B
-    displayName: "INTG"
-    jobs:
-      - job: INTG
-        timeoutInMinutes: 5
-        continueOnError: true
-        cancelTimeoutInMinutes: 2
-        
+      - job: IISrecycleAppPool
+
+- task: IISWebAppManagementOnMachineGroup@0
+  inputs:
+    IISDeploymentType: 'IISApplicationPool'
+    ActionIISApplicationPool: 'RecycleAppPool'
+    StartStopRecycleAppPoolName: 'IVR'
+    
+  
+ 
+     
 
       
 
