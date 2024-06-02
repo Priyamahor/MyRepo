@@ -13,7 +13,7 @@ steps:
     script: |
       # Write your PowerShell commands here.
       
-      Remove-Item "C:\Users\Priya\OneDrive - Coforge Limited\Documents\Delete*.*"
+      Remove-Item "C:\Users\Priya\Delete*.*"
 
 
           
