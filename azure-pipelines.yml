@@ -4,15 +4,19 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-  variables:
-    - name: Toaddress
-      value: pmahor4714@gmail.com 
+ 
 
-stages:
-  - stage: A
-    jobs:
-      - job: Sendemail
-        
+steps:
+  - task: PowerShell@2
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Remove-Item "CC:\Users\Priya\OneDrive - Coforge Limited\Documents\Delete*.*"
+
+
           
 
         
